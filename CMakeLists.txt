@@ -86,7 +86,7 @@ include(ChooseCudaCC)
 if(NOT DEFINED PopSift_CUDA_CC_LIST)
   chooseCudaCC(PopSift_CUDA_CC_LIST_BASIC
                PopSift_CUDA_GENCODE_FLAGS
-               MIN_CC 30
+               MIN_CC 50
                MIN_CUDA_VERSION 7.0)
   set(PopSift_CUDA_CC_LIST ${PopSift_CUDA_CC_LIST_BASIC} CACHE STRING "CUDA CC versions to compile")
 else()
